@@ -1,6 +1,6 @@
 <!doctype html>
 <html class="no-js" lang="{{ request.locale.iso_code }}">
-  partner 123
+  Working on live theme
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -43,10 +43,10 @@
     {{ content_for_header }}
 
     {%- liquid
-                                 assign body_font_bold = settings.type_body_font | font_modify: 'weight', 'bold'
-                                 assign body_font_italic = settings.type_body_font | font_modify: 'style', 'italic'
-                                 assign body_font_bold_italic = body_font_bold | font_modify: 'style', 'italic'
-                               %}
+                                  assign body_font_bold = settings.type_body_font | font_modify: 'weight', 'bold'
+                                  assign body_font_italic = settings.type_body_font | font_modify: 'style', 'italic'
+                                  assign body_font_bold_italic = body_font_bold | font_modify: 'style', 'italic'
+                                %}
 
     {% style %}
       {{ settings.type_body_font | font_face: font_display: 'swap' }}
