@@ -1,7 +1,7 @@
 <div class="videos-section">
      {%- assign video_id = section.settings.video_url | split: 'v=' -%}
       {%- assign video_id = video_id[1] | split: '&' | first -%}
-  
+  {{ video_id }}
       <div
         id="YouTubeVideo-{{ section.id }}"
         data-video-id="{{ video_id }}">
